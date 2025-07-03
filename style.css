@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #111827;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-section {
+  height: 100vh;
+  background: url("images/IMG-20250122-WA0025.jpg") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff88; /* LED green */
+  text-align: center;
+}
+
+.hero-section .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #00ff88;
+  color: #111;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00cc66;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid #00ff88;
+  color: #00ff88;
+}
+
+.btn.secondary:hover {
+  background-color: rgba(0, 255, 136, 0.1);
+}
+
+
+.btn {
+  display: inline-block;
+  background: #111827;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+#portfolio h2,
+#pricing h2,
+#contact h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.project-card, .price-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.price-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.price-box p {
+  margin: 5px 0;
+}
+
+.featured {
+  border: 2px solid #00c6ff;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+footer .socials a {
+  color: #00c6ff;
+  margin: 0 10px;
+  text-decoration: none;
+}
